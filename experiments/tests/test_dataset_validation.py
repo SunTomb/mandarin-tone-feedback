@@ -67,3 +67,23 @@ def test_summarize_metadata_counts_split_and_tone(tmp_path: Path):
     assert summary["by_split"] == {"train": 1, "test": 1}
     assert summary["by_tone"] == {1: 1, 2: 1}
     assert summary["by_speaker"] == {"speaker01": 1, "speaker02": 1}
+
+
+def test_load_validated_metadata_preserves_extra_columns(tmp_path: Path):
+    train_audio = tmp_path / "ma1.wav"
+    test_audio = tmp_path / "ma2.wav"
+    train_audio.write_bytes(b"RIFF")
+    test_audio.write_bytes(b"RIFF")
+    metadata = tmp_path / "metadata.csv"
+    metadata.write_text(
+        "audio_path,text,pinyin,tone,speaker_id,split,source_utterance,start_sec,end_sec,source_dataset,label_method\n"
+        f"{train_audio.name},妈,ma1,1,speaker01,train,utt1.wav,0.0,0.4,THCHS-30,pinyin_tone_digit_with_energy_slicing\n"
+        f"{test_audio.name},麻,ma2,2,speaker01,test,utt2.wav,0.2,0.7,THCHS-30,pinyin_tone_digit_with_energy_slicing\n",
+        encoding="utf-8",
+    )
+
+    rows = load_validated_metadata(metadata)
+
+    assert rows[0]["source_utterance"] == "utt1.wav"
+    assert rows[0]["start_sec"] == "0.0"
+    assert rows[0]["label_method"] == "pinyin_tone_digit_with_energy_slicing"

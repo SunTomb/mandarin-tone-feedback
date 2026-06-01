@@ -1,0 +1,27 @@
+{
+  "total": 480,
+  "by_split_tone": {
+    "train_tone1": 80,
+    "train_tone3": 80,
+    "train_tone4": 80,
+    "train_tone2": 80,
+    "val_tone2": 20,
+    "val_tone4": 20,
+    "val_tone3": 20,
+    "val_tone1": 20,
+    "test_tone1": 20,
+    "test_tone4": 20,
+    "test_tone2": 20,
+    "test_tone3": 20
+  },
+  "config": {
+    "min_duration": 0.18,
+    "max_duration": 1.2,
+    "margin": 0.05,
+    "rms_threshold": 0.001,
+    "min_voiced_ratio": 0.2
+  },
+  "source": "THCHS-30 / OpenSLR SLR18",
+  "source_url": "https://www.openslr.org/18/",
+  "label_method": "pinyin_tone_digit_with_energy_slicing"
+}

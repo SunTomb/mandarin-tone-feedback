@@ -48,6 +48,14 @@ build_proposal_ppt.py
 /package.json
 /package-lock.json
 
+.hf_transfer_cache/
+
+*.bak
+*-副本*.*
+
+# Claude Code local worktrees
+.claude/
+
 # OS / editor
 .DS_Store
 Thumbs.db

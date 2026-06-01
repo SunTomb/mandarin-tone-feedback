@@ -37,3 +37,9 @@ This project uses only public audio sources with recorded provenance. Numeric mo
 ## GitHub search note
 
 GitHub repository search for small Mandarin tone audio datasets did not return a clearly usable repository with downloadable audio and clear license during the initial search. OpenSLR sources above are therefore preferred for reproducibility and citation.
+
+## Derived THCHS-30 tone-slice subset
+
+The final experiment subset is derived from THCHS-30 rather than provided directly by THCHS-30. We use the pinyin tone digits in `.wav.trn` transcripts and deterministic approximate time slicing to create short tone-labeled wav clips. The derived metadata includes `source_utterance`, `start_sec`, `end_sec`, `source_dataset`, and `label_method` columns.
+
+This should be described in the paper as a transcript-derived syllable/short-word subset. It should not be described as a manually segmented isolated-syllable corpus.

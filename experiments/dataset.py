@@ -49,16 +49,11 @@ def load_validated_metadata(path: Path) -> list[dict[str, Any]]:
             if split not in VALID_SPLITS:
                 raise DatasetValidationError(f"line {line_number}: invalid split: {split}")
 
-            rows.append(
-                {
-                    "audio_path": audio_path,
-                    "text": row["text"],
-                    "pinyin": row["pinyin"],
-                    "tone": tone,
-                    "speaker_id": row["speaker_id"],
-                    "split": split,
-                }
-            )
+            parsed_row: dict[str, Any] = dict(row)
+            parsed_row["audio_path"] = audio_path
+            parsed_row["tone"] = tone
+            parsed_row["split"] = split
+            rows.append(parsed_row)
 
     if not rows:
         raise DatasetValidationError("metadata contains no rows")
