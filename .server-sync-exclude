@@ -1,0 +1,16 @@
+node_modules/
+.venv/
+.conda/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.vite/
+outputs/
+logs/
+PB24000227叶盛豪.pptx
+校徽.png
+ppt_assets/
+create_visio_diagrams.ps1
+build_proposal_ppt.py
+/package.json
+/package-lock.json

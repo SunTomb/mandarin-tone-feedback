@@ -1,0 +1,11 @@
+metadata_path: ../data/metadata.example.csv
+classifier: random_forest
+random_state: 42
+features:
+  - f0_start
+  - f0_mid
+  - f0_end
+  - f0_range
+  - f0_slope
+  - duration
+  - voiced_ratio

@@ -1,0 +1,5 @@
+audio_path,text,pinyin,tone,speaker_id,split
+data/raw/ma1_speaker01.wav,妈,ma1,1,speaker01,train
+data/raw/ma2_speaker01.wav,麻,ma2,2,speaker01,train
+data/raw/ma3_speaker01.wav,马,ma3,3,speaker01,val
+data/raw/ma4_speaker01.wav,骂,ma4,4,speaker01,test

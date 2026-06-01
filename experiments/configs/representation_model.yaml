@@ -1,0 +1,4 @@
+model_name: facebook/wav2vec2-base
+pooling: mean
+num_labels: 4
+freeze_encoder: true

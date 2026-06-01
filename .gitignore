@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.env
+.env.*
+
+# Node / frontend
+node_modules/
+frontend/node_modules/
+dist/
+build/
+.vite/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local generated data and experiment artifacts
+data/raw/
+data/processed/
+data/downloads/
+data/metadata.csv
+outputs/
+logs/
+*.npy
+*.npz
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Presentation-only and local artifacts
+PB24000227叶盛豪.pptx
+校徽.png
+ppt_assets/
+create_visio_diagrams.ps1
+build_proposal_ppt.py
+/package.json
+/package-lock.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

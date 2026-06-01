@@ -1,0 +1,4 @@
+acoustic_features_path: data/processed/acoustic_features.npy
+representation_features_path: data/processed/representation_features.npy
+labels_path: data/processed/tone_labels.npy
+classifier: logistic_regression
