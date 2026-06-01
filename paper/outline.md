@@ -22,12 +22,12 @@
 
 ## Result slots to fill from experiments
 
-- Acoustic baseline accuracy / macro-F1:
-- Pretrained representation accuracy / macro-F1:
-- Fusion model accuracy / macro-F1:
-- Main confusion pair:
-- Best feedback example:
-- Main limitation:
+- Acoustic baseline accuracy / macro-F1: 0.2250 / 0.1983
+- Pretrained representation accuracy / macro-F1: 0.3125 / 0.3149
+- Fusion model accuracy / macro-F1: 0.2625 / 0.2599
+- Main confusion pair: fill from confusion matrix after figure/table inspection
+- Best feedback example: insufficient rise / insufficient fall rule examples from prototype
+- Main limitation: transcript-derived approximate slices from continuous THCHS-30 speech, not manually segmented learner syllables
 
 ## Dataset note for experiment section
 
