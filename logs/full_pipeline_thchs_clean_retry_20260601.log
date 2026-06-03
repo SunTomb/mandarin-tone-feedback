@@ -1,0 +1,125 @@
+run_id=thchs_clean_retry_20260601
+project_root=/NAS/yesh/mandarin-tone-feedback
+metadata_path=data/metadata.csv
+model_name=facebook/wav2vec2-base
+gpu_id=5
+Tang3
+Mon 01 Jun 2026 10:18:29 PM CST
+Mon Jun  1 22:18:29 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.129.03             Driver Version: 535.129.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                     Off | 00000000:1A:00.0 Off |                    0 |
+|  0%   70C    P0             281W / 300W |  40846MiB / 46068MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40                     Off | 00000000:1B:00.0 Off |                    0 |
+|  0%   64C    P0             256W / 300W |  36502MiB / 46068MiB |     97%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA A40                     Off | 00000000:3D:00.0 Off |                    0 |
+|  0%   57C    P0             198W / 300W |  24246MiB / 46068MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA A40                     Off | 00000000:3E:00.0 Off |                    0 |
+|  0%   60C    P0             240W / 300W |  24146MiB / 46068MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   4  NVIDIA A40                     Off | 00000000:88:00.0 Off |                    0 |
+|  0%   63C    P0             227W / 300W |  22372MiB / 46068MiB |     97%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   5  NVIDIA A40                     Off | 00000000:89:00.0 Off |                    0 |
+|  0%   63C    P0             235W / 300W |  21434MiB / 46068MiB |     97%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   6  NVIDIA A40                     Off | 00000000:B1:00.0 Off |                    0 |
+|  0%   61C    P0             227W / 300W |  21992MiB / 46068MiB |     97%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   7  NVIDIA A40                     Off | 00000000:B2:00.0 Off |                    0 |
+|  0%   60C    P0             224W / 300W |  22044MiB / 46068MiB |     97%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A   2502782      C   python                                     6582MiB |
+|    0   N/A  N/A   2906335      C   ...uoxs/miniconda3/envs/ttt/bin/python    34246MiB |
+|    1   N/A  N/A   2906337      C   ...uoxs/miniconda3/envs/ttt/bin/python    36050MiB |
+|    2   N/A  N/A   2030339      C   ...da3/envs/spatial_llm/bin/python3.11    24234MiB |
+|    3   N/A  N/A   2030341      C   ...da3/envs/spatial_llm/bin/python3.11    24134MiB |
+|    4   N/A  N/A   2224263      C   ...uoxs/miniconda3/envs/ttt/bin/python    22358MiB |
+|    5   N/A  N/A   2224265      C   ...uoxs/miniconda3/envs/ttt/bin/python    21422MiB |
+|    6   N/A  N/A   2224268      C   ...uoxs/miniconda3/envs/ttt/bin/python    21978MiB |
+|    7   N/A  N/A   2224270      C   ...uoxs/miniconda3/envs/ttt/bin/python    22032MiB |
++---------------------------------------------------------------------------------------+
+{"output_dir": "outputs/thchs_clean_retry_20260601/acoustic", "accuracy": 0.225, "macro_f1": 0.1983251633986928}
+/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 16184e44-55a5-4fa0-824a-8011016d7ec4)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 62772d0f-552b-4eac-b47e-ea6274039d02)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 32800491-2868-4a44-a6bc-7cfbda46d4c2)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: e001d7b4-4418-42b5-a835-799f10a1af64)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 37ffd6ac-2c0b-4ea1-aee7-8db7ca15d731)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 05557f47-65de-4833-88d0-3f2927be5549)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 4ab207aa-3477-40dc-b642-4b1ecdc7bb7b)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 68877712-89b8-4077-8417-aae824be661d)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 78768e45-79af-48ad-848e-2a11f0fe2300)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: dbb1c98c-b09c-4c3f-a5bb-e4f9ec8f62f3)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: de1bb57a-d072-4239-9470-0658cd9a22c4)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: bac7900f-5761-4405-9a11-7ed87bf90e3e)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: b31ed221-fe0f-424b-ae2b-e02fb68bf4f2)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: e3bc5121-ecd0-49ed-bd49-2544ae02c6ff)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 3a91a296-883b-42bc-b7e2-4ee3c4100ed6)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 73d545c9-f522-45df-86da-180573703eee)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: d1f3d7ed-d333-462c-9223-e909c0482acb)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 50deebbd-150e-4810-aae1-83fc6bb7db6d)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 29c75823-5621-4baa-b78c-171daf965e95)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 63259ba3-bdca-450d-b578-fc74688f2295)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: e8610848-c31c-4870-bfcd-6050726f72c4)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NewConnectionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'), '(Request ID: 53fa528d-b379-4004-911e-7c0569d431d4)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 82b6b5e8-eb64-4e83-b2af-c71bc2729198)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 1ccbe9bc-83c1-4d8f-ae27-b523d6506e8e)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 477d1868-0ebb-4a13-89cd-90cd0c5f1daa)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 8cadec45-6a7d-4514-8f78-9bb93ba9fbef)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 49d20757-19c0-456f-b8ae-f09eb369defa)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: d4a6eb13-5be2-4c4f-83a8-5f96fd735faf)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: a275a4ce-3188-44e5-bb85-4abd18548965)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 13ec0642-3fbf-4efc-b2c0-1710859888cc)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 48e3c976-a10f-4667-9b5b-b9c44748d794)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 6900d903-3abf-4c55-a99c-f1226a12365b)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+Retrying in 2s [Retry 2/5].

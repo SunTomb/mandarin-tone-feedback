@@ -1,0 +1,75 @@
+run_id=thchs_feature_clean_20260601
+project_root=/NAS/yesh/mandarin-tone-feedback
+metadata_path=data/metadata_clean_feature_quality.csv
+model_name=facebook/wav2vec2-base
+gpu_id=5
+Tang3
+Mon 01 Jun 2026 10:44:42 PM CST
+Mon Jun  1 22:44:42 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.129.03             Driver Version: 535.129.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                     Off | 00000000:1A:00.0 Off |                    0 |
+|  0%   70C    P0             264W / 300W |  40846MiB / 46068MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40                     Off | 00000000:1B:00.0 Off |                    0 |
+|  0%   64C    P0             263W / 300W |  36502MiB / 46068MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA A40                     Off | 00000000:3D:00.0 Off |                    0 |
+|  0%   58C    P0             211W / 300W |  24246MiB / 46068MiB |     91%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA A40                     Off | 00000000:3E:00.0 Off |                    0 |
+|  0%   61C    P0             226W / 300W |  24166MiB / 46068MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   4  NVIDIA A40                     Off | 00000000:88:00.0 Off |                    0 |
+|  0%   63C    P0             233W / 300W |  22372MiB / 46068MiB |     96%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   5  NVIDIA A40                     Off | 00000000:89:00.0 Off |                    0 |
+|  0%   63C    P0             227W / 300W |  21434MiB / 46068MiB |     93%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   6  NVIDIA A40                     Off | 00000000:B1:00.0 Off |                    0 |
+|  0%   61C    P0             227W / 300W |  21992MiB / 46068MiB |     96%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   7  NVIDIA A40                     Off | 00000000:B2:00.0 Off |                    0 |
+|  0%   61C    P0             237W / 300W |  23732MiB / 46068MiB |     95%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A   2502782      C   python                                     6582MiB |
+|    0   N/A  N/A   2906335      C   ...uoxs/miniconda3/envs/ttt/bin/python    34246MiB |
+|    1   N/A  N/A   2906337      C   ...uoxs/miniconda3/envs/ttt/bin/python    36050MiB |
+|    2   N/A  N/A   2030339      C   ...da3/envs/spatial_llm/bin/python3.11    24234MiB |
+|    3   N/A  N/A   2030341      C   ...da3/envs/spatial_llm/bin/python3.11    24154MiB |
+|    4   N/A  N/A   2224263      C   ...uoxs/miniconda3/envs/ttt/bin/python    22358MiB |
+|    5   N/A  N/A   2224265      C   ...uoxs/miniconda3/envs/ttt/bin/python    21422MiB |
+|    6   N/A  N/A   2224268      C   ...uoxs/miniconda3/envs/ttt/bin/python    21978MiB |
+|    7   N/A  N/A   2224270      C   ...uoxs/miniconda3/envs/ttt/bin/python    23720MiB |
++---------------------------------------------------------------------------------------+
+Traceback (most recent call last):
+  File "/NAS/yesh/mandarin-tone-feedback/experiments/train_acoustic_baseline.py", line 103, in <module>
+    main()
+  File "/NAS/yesh/mandarin-tone-feedback/experiments/train_acoustic_baseline.py", line 98, in main
+    metrics = run_acoustic_baseline(args.metadata, output_dir, args.classifier, args.random_state)
+  File "/NAS/yesh/mandarin-tone-feedback/experiments/train_acoustic_baseline.py", line 44, in run_acoustic_baseline
+    rows = load_metadata(metadata_path)
+  File "/NAS/yesh/mandarin-tone-feedback/experiments/train_acoustic_baseline.py", line 20, in load_metadata
+    return load_validated_metadata(path)
+  File "/NAS/yesh/mandarin-tone-feedback/experiments/dataset.py", line 39, in load_validated_metadata
+    raise DatasetValidationError(f"line {line_number}: missing audio file: {audio_path}")
+dataset.DatasetValidationError: line 2: missing audio file: data/data/processed/thchs30_slices/train/tone1/A11_0_004_yan1.wav

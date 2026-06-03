@@ -1,0 +1,72 @@
+{
+  "accuracy": 0.3760932944606414,
+  "macro_f1": 0.32750166114717116,
+  "classification_report": {
+    "1": {
+      "precision": 0.34591194968553457,
+      "recall": 0.6111111111111112,
+      "f1-score": 0.44176706827309237,
+      "support": 90.0
+    },
+    "2": {
+      "precision": 0.375,
+      "recall": 0.13333333333333333,
+      "f1-score": 0.19672131147540983,
+      "support": 90.0
+    },
+    "3": {
+      "precision": 0.4108527131782946,
+      "recall": 0.5888888888888889,
+      "f1-score": 0.4840182648401826,
+      "support": 90.0
+    },
+    "4": {
+      "precision": 0.391304347826087,
+      "recall": 0.1232876712328767,
+      "f1-score": 0.1875,
+      "support": 73.0
+    },
+    "accuracy": 0.3760932944606414,
+    "macro avg": {
+      "precision": 0.380767252672479,
+      "recall": 0.36415525114155256,
+      "f1-score": 0.32750166114717116,
+      "support": 343.0
+    },
+    "weighted avg": {
+      "precision": 0.3802450059739037,
+      "recall": 0.3760932944606414,
+      "f1-score": 0.33444051898828464,
+      "support": 343.0
+    }
+  },
+  "dataset_summary": {
+    "total": 953,
+    "by_split": {
+      "train": 401,
+      "val": 209,
+      "test": 343
+    },
+    "by_tone": {
+      "1": 259,
+      "2": 249,
+      "3": 250,
+      "4": 195
+    },
+    "by_speaker": {
+      "speaker01": 320,
+      "speaker02": 290,
+      "speaker03": 343
+    }
+  },
+  "feature_names": [
+    "f0_start",
+    "f0_mid",
+    "f0_end",
+    "f0_range",
+    "f0_slope",
+    "duration",
+    "voiced_ratio"
+  ],
+  "classifier": "random_forest"
+}

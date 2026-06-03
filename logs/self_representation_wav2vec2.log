@@ -1,0 +1,279 @@
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/processor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: a6180110-1ac1-436d-9abe-4f96e4f28770)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/processor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: ef66abdb-b199-4d55-b537-85b468f79f8a)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/processor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: e48ff9d1-c825-452c-ade8-2aa32940b2a2)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/processor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 8d25ffdf-e298-4dcf-af59-f3cc0729a8ae)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/processor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: a66089f1-a94e-49dd-ae05-e74b289f812d)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/processor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 718d3e60-1697-4d44-b915-041f09f6bcc3)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: d605956d-eef4-40de-96da-c29d74153a64)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 8716ab26-0989-4c47-912a-bc22c4215239)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 92a1328e-2945-4542-b072-73a9886eab12)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 9923eb28-2c2c-4540-a41e-8975fca26fc0)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: be9ae54d-2e9e-4547-b139-04bbb3fea278)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 09eefae7-0243-41a8-944c-70078c7a9169)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 41f82020-abdb-4433-867d-4fa0b1fca8e4)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: cd23aac8-4e4c-4bcf-bfdc-a0529b159060)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: b9dc14f6-6807-4506-81ef-1d5a54978975)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: a0c8818f-f91a-452e-8fea-062cf0435904)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 4f6d6e27-784d-4ca5-98a9-0c5068b2924d)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 2398959b-7d52-4a9d-9c3b-f8b4471e823f)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: e801f3df-1cc6-417e-9a26-077f6f6c0bdb)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 427df67b-15ca-49f2-8ea1-a852a128df36)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 25fa7112-e552-4266-90ba-b2e05fd564f4)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 4df372d0-8d08-48e5-b1e9-d343d94c7d24)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 2a0231b0-7158-45aa-a790-8186d65f6d2b)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 75c6208c-611a-48e8-97a8-f6d11261f862)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/tokenizer_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 059a59d2-039b-4370-802f-ba4e92eca0e9)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/tokenizer_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 7880eb46-d11d-4916-a50e-adc3c6022882)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/tokenizer_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 49d961a8-5b6e-4c86-90da-fef02c0a52af)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/tokenizer_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: e5a4804d-985d-476c-a872-0d726c35388a)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/tokenizer_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 24dbedd5-b1df-4bee-af72-0bf287d13042)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/tokenizer_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 6e87d215-8deb-44b0-ac86-e91efd0968bf)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: bab0fcaf-eb07-4218-b552-c84805633336)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: b6ffb2f9-a22a-460d-ae9d-9db2cfa37b58)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: f7431252-2e1b-46a4-9cca-4ca02f6972cd)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 59a3e0af-c529-4a4a-8304-c167e5477279)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: fa2f0a23-a3ee-4d54-996a-52baf7f7237a)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 375e8572-3032-4d0a-b8b6-93d01f8c1981)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/transformers/configuration_utils.py:364: UserWarning: Passing `gradient_checkpointing` to a config initialization is deprecated and will be removed in v5 Transformers. Using `model.gradient_checkpointing_enable()` instead, or if you are using the `Trainer` API, pass `gradient_checkpointing=True` in your `TrainingArguments`.
+  warnings.warn(
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: b71b209d-3d6c-4b91-91eb-4f38e16edeee)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: e5921e16-4d09-4ef0-b380-a65100c92287)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 3aff93cc-fb42-4f40-bbde-cf0eae05848b)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 51a13f20-a15c-41f3-b416-5ca45c4c4d78)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 970b3daf-26fe-4966-a7ed-e8b9512849f0)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/preprocessor_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 1fe8856e-eb6a-4e10-8a4b-dd5c9eadc48f)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/preprocessor_config.json
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/tokenizer_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 4b913652-1947-4fce-b80c-059f0db414ff)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/wav2vec2-base/resolve/main/tokenizer_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 3ea2540c-87f5-4ae7-b59b-974634b5a5e8)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: c9a51bf7-bf37-4db0-aa88-422f9416766b)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 1b3765f1-da2a-4117-b0d8-6cfe52562105)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 0929c37e-809f-4749-90d1-e7be12b1b255)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 106b196f-ecc7-43fa-a244-97e4bd661538)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer_config.json
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 852552c2-04dd-4d29-8274-0ca7dc414c51)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/added_tokens.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 5f44f86c-8a61-482f-bd90-14ae98d26890)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/added_tokens.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: f5f2fcde-91f2-4fb9-9246-674ca174f7d6)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/added_tokens.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: c9ef1e9b-be4c-4933-af60-b9258b040aae)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/added_tokens.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 2f6d9bd6-62f4-4b57-a240-3c719003f08f)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/added_tokens.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 6b70f853-4f85-4a0c-874a-2e0b681a7fdc)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/added_tokens.json
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: e08fbd4a-d1ed-4477-ab22-2fc463366625)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 940db440-194c-4522-a038-43600c85f182)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 2a4aaebf-e76b-478c-b07c-f3c935bec8d8)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: b9a05b40-7eaa-4c52-9223-4ff27eae4e8e)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: e7d77449-1460-479f-9822-14abb30a369d)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: e2ecc179-10da-4084-b367-b54324fd1402)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/tokenizer.json
+/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: e05eadc3-65e9-4598-9e12-3c96f6e13857)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 167b4dfc-989c-4063-8933-dc12f65fdd5a)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: effe2d16-0e56-48e9-bc2a-e55ea8e96f73)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 220a59b5-8931-46a7-8b7f-75bf61ce864c)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 6fee31c9-1870-4e4f-9406-76f0b5711d01)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 05ad14cc-6f49-4675-b384-45e2c3318cc9)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/processor_config.json
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: a1c169bc-1b6e-47bc-bed4-1f53a25bbbfc)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/chat_template.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 8bdd33b3-b694-40bd-9e57-aa586b324bad)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/chat_template.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: e26bed11-b97a-4312-a071-f9d96f991022)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/chat_template.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: c42d6673-e5d9-4b07-aa48-ff6b05571ace)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/chat_template.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: f171ddbb-40e1-4282-968d-a6eb604549bc)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/chat_template.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 20bf5f38-6e46-49aa-bcbb-6f2118fa2706)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/chat_template.json
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: cc1e6d8c-bc32-42e0-a96e-25ef4886c15b)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: a8debbd0-ca8d-42dd-9ed5-7444eecc3887)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 38d11e3a-d0ba-4045-b932-ebf254dde6ee)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: a2d7634a-20c6-4128-834b-e72a722d14f9)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: d60aa37d-aef4-456a-9dfd-98ff009c0f96)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 3aac570e-7294-446d-9a8d-554e966f92af)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/config.json
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 603cc04d-e6e9-4bc1-9683-6a6745ecb355)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: b8254345-2656-4ca7-91df-bf7835115677)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/adapter_config.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: c514a2f0-0876-4d21-818e-aab557cf65c7)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/adapter_config.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 9fa312cc-f3cd-4e24-b84a-46582a051ec0)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/adapter_config.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 1e4556b9-221e-46e2-afca-cb42e1e4b92a)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/adapter_config.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 0faedbca-6583-47d7-ad5a-f9bb2f036701)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/adapter_config.json
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: f7adceda-0cbc-4192-89d5-ff1a77edd094)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 9c629d08-bee0-4a05-ba92-d32a3670fd3f)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/adapter_config.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 7c772d69-cc1f-4e85-9f01-8bcf73ff48f1)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/adapter_config.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: c848176c-4190-48ea-9676-7238b72fe9cb)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/adapter_config.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 4ac85490-505b-4546-ac4d-a32f55af9ce5)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/adapter_config.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 42400621-0915-4cf4-8487-d3750ca7543a)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/adapter_config.json
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: dfdde5e2-ad21-412a-b5fa-ce908ed69f0c)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/model.safetensors
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 14793c3e-bb1b-4555-9e86-01f6518ac55e)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/model.safetensors
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 42242f92-60bd-490a-95e4-d4a1a3847596)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/model.safetensors
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 693d24ae-dcea-4358-8cb9-d9d4bcf0ac79)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/model.safetensors
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: d19156da-a4d4-42cb-bf32-f1f1d352b7f0)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/model.safetensors
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: c63e70e6-11fe-43f4-922b-a7653cc606d2)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/model.safetensors
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: ba7d3e4f-9fc6-46e3-84f0-0aa17cf8b94d)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/model.safetensors.index.json
+Retrying in 1s [Retry 1/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: de4ebf41-b065-4878-8f9f-5356d83ad13c)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/model.safetensors.index.json
+Retrying in 2s [Retry 2/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 2a7af9f1-9b66-4657-80e2-647e1ea8029e)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/model.safetensors.index.json
+Retrying in 4s [Retry 3/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 79eb0fb0-555f-4bc5-a8dc-b3122775faef)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/model.safetensors.index.json
+Retrying in 8s [Retry 4/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 33d11343-14cd-46df-aa42-0e2f6ad6d1d3)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/model.safetensors.index.json
+Retrying in 8s [Retry 5/5].
+'(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 2cd5573d-5c74-43f5-b797-b8235909af44)')' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base/resolve/main/model.safetensors.index.json
+Traceback (most recent call last):
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connection.py", line 796, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connection.py", line 975, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 483, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 527, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/requests/adapters.py", line 645, in send
+    resp = conn.urlopen(
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connection.py", line 796, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/connection.py", line 975, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 483, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 527, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/NAS/yesh/mandarin-tone-feedback/experiments/train_representation_model.py", line 125, in <module>
+    main()
+  File "/NAS/yesh/mandarin-tone-feedback/experiments/train_representation_model.py", line 120, in main
+    metrics = run_representation_experiment(args.metadata, output_dir, config, args.device)
+  File "/NAS/yesh/mandarin-tone-feedback/experiments/train_representation_model.py", line 70, in run_representation_experiment
+    features = extract_representations(rows, config, device)
+  File "/NAS/yesh/mandarin-tone-feedback/experiments/train_representation_model.py", line 44, in extract_representations
+    model = AutoModel.from_pretrained(config.model_name).to(device)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3594, in from_pretrained
+    if not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs):
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/transformers/utils/hub.py", line 655, in has_file
+    response = get_session().head(
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/requests/sessions.py", line 627, in head
+    return self.request("HEAD", url, **kwargs)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/requests/sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/requests/sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+  File "/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/requests/adapters.py", line 660, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: (ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')), '(Request ID: 237ffe43-33ef-4425-bce5-e3be3e4b3161)')

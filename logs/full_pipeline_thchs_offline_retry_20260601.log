@@ -1,0 +1,76 @@
+run_id=thchs_offline_retry_20260601
+project_root=/NAS/yesh/mandarin-tone-feedback
+metadata_path=data/metadata.csv
+model_name=facebook/wav2vec2-base
+gpu_id=5
+Tang3
+Mon 01 Jun 2026 10:21:36 PM CST
+Mon Jun  1 22:21:36 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.129.03             Driver Version: 535.129.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                     Off | 00000000:1A:00.0 Off |                    0 |
+|  0%   70C    P0             282W / 300W |  40846MiB / 46068MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40                     Off | 00000000:1B:00.0 Off |                    0 |
+|  0%   63C    P0             241W / 300W |  36502MiB / 46068MiB |     96%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA A40                     Off | 00000000:3D:00.0 Off |                    0 |
+|  0%   57C    P0             237W / 300W |  24246MiB / 46068MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA A40                     Off | 00000000:3E:00.0 Off |                    0 |
+|  0%   61C    P0             226W / 300W |  24146MiB / 46068MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   4  NVIDIA A40                     Off | 00000000:88:00.0 Off |                    0 |
+|  0%   63C    P0             230W / 300W |  22372MiB / 46068MiB |     96%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   5  NVIDIA A40                     Off | 00000000:89:00.0 Off |                    0 |
+|  0%   63C    P0             236W / 300W |  21434MiB / 46068MiB |     97%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   6  NVIDIA A40                     Off | 00000000:B1:00.0 Off |                    0 |
+|  0%   61C    P0             229W / 300W |  21992MiB / 46068MiB |     97%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   7  NVIDIA A40                     Off | 00000000:B2:00.0 Off |                    0 |
+|  0%   60C    P0             225W / 300W |  22044MiB / 46068MiB |     97%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A   2502782      C   python                                     6582MiB |
+|    0   N/A  N/A   2906335      C   ...uoxs/miniconda3/envs/ttt/bin/python    34246MiB |
+|    1   N/A  N/A   2906337      C   ...uoxs/miniconda3/envs/ttt/bin/python    36050MiB |
+|    2   N/A  N/A   2030339      C   ...da3/envs/spatial_llm/bin/python3.11    24234MiB |
+|    3   N/A  N/A   2030341      C   ...da3/envs/spatial_llm/bin/python3.11    24134MiB |
+|    4   N/A  N/A   2224263      C   ...uoxs/miniconda3/envs/ttt/bin/python    22358MiB |
+|    5   N/A  N/A   2224265      C   ...uoxs/miniconda3/envs/ttt/bin/python    21422MiB |
+|    6   N/A  N/A   2224268      C   ...uoxs/miniconda3/envs/ttt/bin/python    21978MiB |
+|    7   N/A  N/A   2224270      C   ...uoxs/miniconda3/envs/ttt/bin/python    22032MiB |
++---------------------------------------------------------------------------------------+
+{"output_dir": "outputs/thchs_offline_retry_20260601/acoustic", "accuracy": 0.225, "macro_f1": 0.1983251633986928}
+/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/transformers/configuration_utils.py:364: UserWarning: Passing `gradient_checkpointing` to a config initialization is deprecated and will be removed in v5 Transformers. Using `model.gradient_checkpointing_enable()` instead, or if you are using the `Trainer` API, pass `gradient_checkpointing=True` in your `TrainingArguments`.
+  warnings.warn(
+/NAS/yesh/NLP/.conda/selfrag/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Some weights of Wav2Vec2Model were not initialized from the model checkpoint at facebook/wav2vec2-base and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+{"output_dir": "outputs/thchs_offline_retry_20260601/representation", "accuracy": 0.3125, "macro_f1": 0.3148807760489404}
+{"output_dir": "outputs/thchs_offline_retry_20260601/fusion", "accuracy": 0.2625, "macro_f1": 0.25993015768265487}
+paper/figures/representation_tsne_thchs_offline_retry_20260601.png
+outputs saved to outputs/thchs_offline_retry_20260601

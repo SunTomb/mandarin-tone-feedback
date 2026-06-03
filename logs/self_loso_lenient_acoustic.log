@@ -1,0 +1,3 @@
+{"output_dir": "outputs/self_loso_lenient_acoustic_speaker01", "accuracy": 0.515625, "macro_f1": 0.5028291025528595}
+{"output_dir": "outputs/self_loso_lenient_acoustic_speaker02", "accuracy": 0.3275862068965517, "macro_f1": 0.31855968219179287}
+{"output_dir": "outputs/self_loso_lenient_acoustic_speaker03", "accuracy": 0.3760932944606414, "macro_f1": 0.32750166114717116}

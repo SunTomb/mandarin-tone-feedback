@@ -3,9 +3,10 @@
 \documentclass[UTF8,a4paper,twocolumn]{ctexart}
 
 \usepackage{geometry}
-\geometry{top=25.4mm,bottom=25.4mm,left=19.5mm,right=19.5mm,headheight=8mm,headsep=4mm,footskip=10mm,columnsep=7.5mm}
+\geometry{top=25.4mm,bottom=25.4mm,left=19.5mm,right=19.5mm,headheight=15mm,headsep=0mm,footskip=17.5mm,columnsep=7.5mm}
 \usepackage{fontspec}
 \usepackage{graphicx}
+\graphicspath{{}{paper/}}
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{caption}
@@ -13,7 +14,8 @@
 \usepackage{indentfirst}
 \usepackage{fancyhdr}
 \usepackage{balance}
-\usepackage[superscript]{cite}
+\usepackage{cite}
+\usepackage{etoolbox}
 \usepackage{hyperref}
 \hypersetup{hidelinks}
 
@@ -23,6 +25,7 @@
 \setlength{\parindent}{2em}
 \setlength{\parskip}{0pt}
 \linespread{1.0}
+\AtBeginDocument{\fontsize{10.5pt}{12pt}\selectfont}
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
@@ -47,6 +50,24 @@
 \newcommand{\classification}[1]{\par\noindent{\zihao{5}\heiti 中图分类号：}{\zihao{5}\songti #1}\quad{\zihao{5}\heiti 文献标志码：}{\zihao{5}\songti A}}
 \newcommand{\englishtitle}[1]{\begin{center}{\zihao{3}\bfseries #1}\end{center}}
 \newcommand{\englishblock}[1]{{\zihao{5} #1}}
+\newcommand{\reffont}{\fontsize{9pt}{12pt}\selectfont}
+\makeatletter
+\renewenvironment{thebibliography}[1]{%
+  \section*{参考文献（References）}%
+  \reffont
+  \list{[\arabic{enumiv}]}{%
+    \settowidth\labelwidth{[#1]}%
+    \leftmargin=1.8em
+    \labelsep=0.45em
+    \itemindent=0pt
+    \itemsep=0pt
+    \parsep=0pt
+    \usecounter{enumiv}%
+    \let\p@enumiv\@empty
+    \renewcommand\theenumiv{\arabic{enumiv}}}%
+  \sloppy\clubpenalty4000\widowpenalty4000}
+  {\def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}\endlist}
+\makeatother
 
 \begin{document}
 \twocolumn[
@@ -55,17 +76,25 @@
 \authors{叶盛豪}
 \affiliation{（中国科学技术大学，安徽 合肥 230026）}
 \vspace{2mm}
-\zhabstract{普通话声调学习既涉及阴平、阳平、上声、去声等离散调类判断，也涉及基频（F0）轮廓、升降方向和相对调值等连续声学控制。传统自动发音评价若只给出类别或分数，难以解释学习者应当怎样调整音高运动。本文设计并实现一个面向普通话声调学习的可解释 AI 反馈系统：系统接收孤立单字或短词音频，提取并归一化 F0 曲线，将学习者曲线与目标五度调值轮廓进行比较，并生成与声学偏差对应的规则化反馈。实验部分比较可解释声学特征、冻结 wav2vec2 预训练表征以及二者融合三类声调分类路径。除保留 THCHS 连续语音派生切片作为公开语料基线外，本文构建 1080 条自录普通话孤立单字数据，并在质量过滤后保留 953 条样本。结果显示，在该固定划分下，过滤后融合模型取得最高结果，准确率为 0.3965，宏平均 F1 值为 0.3722，高于单独声学特征和单独 wav2vec2 表征路径；留一说话人声学实验也显示不同说话人之间存在明显差异。本文进一步结合普通话声调训练、计算机辅助发音训练和自监督语音表征研究，讨论系统的语言科学意义与可扩展实验路线。系统中的预测声调仅作为参考，核心目标是通过 F0 可视化、目标曲线比较和可解释反馈支持普通话声调学习。}
+\zhabstract{普通话声调学习既涉及阴平、阳平、上声、去声等离散调类判断，也涉及基频（F0）轮廓、升降方向和相对调值等连续声学控制。传统自动发音评价若只给出类别或分数，难以解释学习者应当怎样调整音高运动。本文设计并实现一个面向普通话声调学习的可解释 AI 反馈系统：系统接收孤立单字或短词音频，提取并归一化 F0 曲线，将学习者曲线与目标五度调值轮廓进行比较，并生成与声学偏差对应的规则化反馈。实验部分比较可解释声学特征、冻结 wav2vec2 预训练表征以及二者融合三类声调分类路径。除保留 THCHS 连续语音派生切片作为公开语料基线外，本文构建 1080 条自录普通话孤立单字数据，并在质量过滤后保留 953 条样本。结果显示，在该固定划分下，过滤后融合模型取得最高结果，准确率为 0.3965，宏平均 F1 值为 0.3722，高于单独声学特征和单独 wav2vec2 表征路径；留一说话人声学实验也提示不同说话人之间存在明显差异。本文进一步结合普通话声调训练、计算机辅助发音训练和自监督语音表征研究，讨论系统的语言科学意义与可扩展实验路线。系统中的预测声调仅作为参考，核心目标是通过 F0 可视化、目标曲线比较和可解释反馈支持普通话声调学习。}
 \zhkeywords{普通话声调；基频曲线；五度调值；预训练语音表征；可解释反馈}
 \classification{H116}
+\vspace{2mm}
+\englishtitle{An explainable AI feedback system for Mandarin tone learning}
+\authors{YE Shenghao}
+\affiliation{(University of Science and Technology of China, Hefei 230026, China)}
+\englishblock{\noindent\textbf{Abstract:} Mandarin tone learning involves both discrete tone-category recognition and continuous pitch-contour control. This paper presents an explainable AI feedback system for Mandarin tone learning. The system accepts isolated-character or short-word recordings, extracts and normalizes the fundamental frequency contour, compares the learner contour with a target five-level tone contour, and produces rule-based feedback linked to observable acoustic deviations. Offline experiments compare interpretable acoustic features, frozen wav2vec2 speech representations, and a simple fusion model. Besides retaining THCHS-derived continuous-speech slices as a public-data baseline, this work builds a self-recorded isolated-character dataset with 1080 samples and keeps 953 samples after quality filtering. On the filtered self-recorded data, the fusion model obtains the best result with an accuracy of 0.3965 and a macro-F1 score of 0.3722. Leave-one-speaker-out experiments further suggest clear speaker variation. The project is publicly available at https://github.com/SunTomb/mandarin-tone-feedback. The prediction is therefore presented only as a reference, while the main contribution of the prototype is F0 visualization, target-contour comparison, and interpretable learner feedback.}
+
+\vspace{1mm}
+\englishblock{\noindent\textbf{Key words:} Mandarin tone; fundamental frequency contour; five-level tone value; pretrained speech representation; explainable feedback}
 \vspace{2mm}
 ]
 
 普通话声调是用音高区别词义的典型超音段特征。对学习者而言，声调困难并不只是“读成了几声”的分类问题，还包括音高起点、升降方向、转折位置和整体稳定性等连续声学控制问题。例如，一声通常要求相对稳定的高平轮廓，二声要求明显上升，三声常表现为低凹或转折，四声则要求快速下降。如果自动系统只给出“正确/错误”或一个总分，学习者难以知道自己应当调整哪个声学维度。
 
-语言科学课程中的声学语音学和音系学概念为这一问题提供了自然框架。声学语音学把语音视为可测量的物理信号，F0 曲线可作为声调分析的重要线索；音系学区分调类和调值，前者是语言系统中的类别，后者是具体音高实现。普通话四声可分别对应阴平、阳平、上声和去声等调类，也可用赵元任五度标记法近似描述为相对音高轮廓。语言习得视角进一步强调，学习者需要从连续声学输入中形成离散声调范畴，同时也需要通过反馈修正自己的产出。
+语言科学课程中的声学语音学和音系学概念为这一问题提供了自然框架。声学语音学把语音视为可测量的物理信号，F0 曲线可作为声调分析的重要线索；音系学区分调类和调值，前者是语言系统中的类别，后者是具体音高实现。普通话四声可分别对应阴平、阳平、上声和去声等调类，也可用赵元任五度标记法近似描述为相对音高轮廓\cite{chao1930,zhu2010,huangliao2017}。语言习得视角进一步强调，学习者需要从连续声学输入中形成离散声调范畴，同时也需要通过反馈修正自己的产出\cite{liuxun2000}。
 
-已有声调学习研究表明，二语学习者可以通过有组织的感知训练改善普通话声调辨认能力。Wang 等\cite{wang1999}关于美国学习者普通话声调感知训练的研究说明，高变异输入和反馈能够促进声调类别学习。Gandour\cite{gandour1983}对东亚语言声调感知的综述也提示，声调知觉不仅依赖绝对音高，还与轮廓方向、时长、音域归一化以及母语经验有关。这些发现说明，声调学习系统不应只关注一个分类标签，而应帮助学习者把连续音高线索映射到稳定调类。
+已有声调学习研究表明，二语学习者可以通过有组织的感知训练改善普通话声调辨认能力。Wang 等\cite{wang1999}关于美国学习者普通话声调感知训练的研究说明，高变异输入和反馈能够促进声调类别学习。Gandour\cite{gandour1983}对东亚语言声调感知的综述也提示，声调知觉不仅依赖绝对音高，还与轮廓方向、时长、音域归一化以及母语经验有关。汉语作为第二语言教学研究同样强调声调偏误、听辨训练和产出反馈之间的关系\cite{zhaojinming2004,liuxun2000}。这些发现说明，声调学习系统不应只关注一个分类标签，而应帮助学习者把连续音高线索映射到稳定调类。
 
 计算机辅助发音训练（computer-assisted pronunciation training, CAPT）则提供了工程和教学上的背景。Witt 和 Young\cite{witt2000}提出的音位级发音评分展示了自动语音识别技术在发音评价中的潜力；Neri 等\cite{neri2002}指出 CAPT 系统不仅需要识别错误，还需要提供学习者能够理解并据此修正的反馈；Eskenazi\cite{eskenazi2009}进一步总结了教育场景中语音技术的机会和限制。对本文任务而言，普通话声调反馈比音段发音评分更依赖 F0 轮廓，因此“可解释反馈”比单一正确率更重要。
 
@@ -77,11 +106,11 @@
 
 声调语言使用音高差异区别词义。普通话通常分析为四个主要词汇声调：阴平、阳平、上声和去声。这里的“四声”首先是音系系统中的调类，即能够区别词义的类别；具体发音时，不同说话人、语境、语速和音域会导致实际 F0 曲线变化，因此不能把单次曲线简单等同于调类本身。
 
-调值用于描述调类的典型音高实现。赵元任五度标记法把相对音高分为 1 到 5 五个等级，可以把一声近似描述为高平，二声描述为上升，三声描述为低凹或降升，四声描述为下降\cite{chao1930}。三声在孤立单字中较容易观察到低凹或降升轮廓，但在连续语音中常出现变体，这也是 THCHS 派生切片更难解释的原因之一。本文系统的反馈设计建立在“调类—调值”区分上：预测模块提供调类层面的参考判断，F0 可视化和目标曲线比较则帮助学习者理解自己的调值实现。需要强调的是，本文中的目标五度曲线只作为教学型相对轮廓，而不是对每个说话人真实 Hz 轨迹的强约束。
+调值用于描述调类的典型音高实现。赵元任五度标记法把相对音高分为 1 到 5 五个等级，可以把一声近似描述为高平，二声描述为上升，三声描述为低凹或降升，四声描述为下降\cite{chao1930}。普通话语音研究和汉语语音学教材通常也把普通话声调作为音高型超音段特征来处理，强调调类、调值和实际音高实现之间的区分\cite{wu1992,zhu2010,huangliao2017,linwang2013}。三声在孤立单字中较容易观察到低凹或降升轮廓，但在连续语音中常出现变体，这也是 THCHS 派生切片更难解释的原因之一。本文系统的反馈设计建立在“调类—调值”区分上：预测模块提供调类层面的参考判断，F0 可视化和目标曲线比较则帮助学习者理解自己的调值实现。需要强调的是，本文中的目标五度曲线只作为教学型相对轮廓，而不是对每个说话人真实 Hz 轨迹的强约束。
 
 \subsection{F0 轮廓与学习者反馈}
 
-F0 是声带振动周期对应的基频，是声调声学分析的重要指标。虽然 F0 会受到性别、年龄、个体嗓音范围和语境影响，但归一化后的 F0 轮廓仍可用于比较音高运动方向和相对形状。本文原型将短音频中的 F0 估计结果映射到 1--5 的相对音高范围。离线实验计算起点、中点、终点、范围、斜率、时长和有声比例等摘要特征；在线 demo 则主要返回归一化曲线、参考预测、目标曲线和反馈项。
+F0 是声带振动周期对应的基频，是声调声学分析的重要指标。实验语音学研究通常将基频、时长和强度视为汉语声调声学描写的重要维度\cite{shilin1986}。虽然 F0 会受到性别、年龄、个体嗓音范围和语境影响，但归一化后的 F0 轮廓仍可用于比较音高运动方向和相对形状。本文原型将短音频中的 F0 估计结果映射到 1--5 的相对音高范围。离线实验计算起点、中点、终点、范围、斜率、时长和有声比例等摘要特征；在线 demo 则主要返回归一化曲线、参考预测、目标曲线和反馈项。
 
 反馈规则不使用自由生成文本，而是与可观察声学属性绑定。例如，当目标为二声而终点相对起点上升不足时，系统提示二声需要更明显的上升；当目标为四声而下降幅度不足时，系统提示四声需要更快、更充分的下降。这种设计避免把反馈变成黑箱评价，也符合语言学习中“指出可操作偏差”的需求。
 
@@ -91,7 +120,7 @@ F0 是声带振动周期对应的基频，是声调声学分析的重要指标�
 
 \section{系统设计与开源实现}
 
-系统采用前后端分离结构。前端使用 React 展示目标声调选择、录音或上传入口、反馈卡片和 F0 曲线图；后端使用 FastAPI 接收音频，完成音频读取、F0 提取、特征摘要、声调预测和反馈生成；离线实验脚本独立于 Web 服务运行，用于训练和评估声调分类模型。完整数据流为：用户选择目标声调并上传或录制 1--2 s 单字或短词音频；后端读取音频并估计 F0；F0 被归一化到五度范围；系统生成目标声调曲线，并将学习者曲线与目标曲线共同返回给前端；前端以图表和反馈列表展示结果。
+系统采用前后端分离结构。前端使用 React 展示目标声调选择、录音或上传入口、反馈卡片和 F0 曲线图；后端使用 FastAPI 接收音频，完成音频读取、F0 提取、轮廓归一化、参考声调预测和反馈生成；离线实验脚本独立于 Web 服务运行，用于训练和评估声调分类模型。完整数据流为：用户选择目标声调并上传或录制 1--2 s 单字或短词音频；后端读取音频并估计 F0；F0 被归一化到五度范围；系统生成目标声调曲线，并将学习者曲线与目标曲线共同返回给前端；前端以图表和反馈列表展示结果。
 
 第一版原型故意限制在孤立音节或短词层面，不支持完整自动语音识别、句子级评分、账户系统或长期学习记录。这一边界有助于保持项目与语言科学问题对齐：系统关注声调类别、调值轮廓和可解释反馈，而不是通用语音识别或产品化练习平台。在线演示也不依赖实时 GPU 推理，而使用轻量 F0 规则给出参考预测，使网页原型可以在普通开发环境中运行。
 
@@ -138,7 +167,7 @@ wav2vec2表征 & 否 & 是 \\
 
 为了更贴近声调反馈系统的使用场景，本文进一步构建自录普通话孤立单字数据集。数据目录采用 data/self/\{speaker\}-\{tone\}-\{repetition\} 结构，其中目录名编码说话人、目标声调和重复批次。每个声调批次包含 30 个单字录音。原始 manifest 共 1080 条样本，三名说话人各 360 条，四个声调各 270 条；按预设划分得到训练集 480 条、验证集 240 条、测试集 360 条。
 
-考虑到自录数据中可能存在静音过长、响度过低或有效有声帧不足等问题，本文使用宽松质量过滤策略：时长限制为 0.25--3.2 s，有声比例不低于 0.12，有声帧数不低于 8，RMS 不低于 0.005。过滤后保留 953 条样本，其中训练集 401 条、验证集 209 条、测试集 343 条。主结果采用 speaker03 作为 held-out test speaker，非测试说话人的第 3 次重复作为 val，其余为 train；当前基线实验仅使用 train split 训练，并在 test split 上报告结果，val split 在本版本中保留为未来阈值或超参数选择集合，未参与表格结果的模型选择。此外，为检查说话人差异，本文另行构造三个 leave-one-speaker-out acoustic baseline。过滤后 speaker01、speaker02、speaker03 分别保留 320、290、343 条，tone1--tone4 分别保留 259、249、250、195 条。tone4 保留数量较少，后续结果解释中需要考虑这一不平衡。
+考虑到自录数据中可能存在静音过长、响度过低或有效有声帧不足等问题，本文使用宽松质量过滤策略：时长限制为 0.25--3.2 s，有声比例不低于 0.12，有声帧数不低于 8，RMS 不低于 0.005。过滤后保留 953 条样本，其中训练集 401 条、验证集 209 条、测试集 343 条。主结果采用 speaker03 作为 held-out test speaker，非测试说话人的第 3 次重复作为 val，其余为 train。当前基线实验仅使用 train split 训练，并在 test split 上报告结果；val split 在本版本中保留为未来阈值或超参数选择集合，未参与表格结果的模型选择。此外，为检查说话人差异，本文另行构造三个 leave-one-speaker-out acoustic baseline。过滤后 speaker01、speaker02、speaker03 分别保留 320、290、343 条，tone1--tone4 分别保留 259、249、250、195 条。tone4 保留数量较少，后续结果解释中需要考虑这一不平衡。
 
 \begin{table}[t]
 \centering
@@ -200,7 +229,7 @@ Self filtered fusion & \textbf{0.3965} & \textbf{0.3722} \\
 \end{tabular}
 \end{table*}
 
-在 THCHS pilot 设置下，wav2vec2 冻结表征优于声学基线和简单融合，说明预训练语音表征可能捕捉到一部分与声调分类相关的信息；但整体准确率较低，反映出连续语音近似切片对声调分类的限制。自录孤立单字数据更接近本文系统的使用场景，三类模型的结果整体高于 THCHS 基线；但二者切分方式、录音场景和标签来源不同，因此这种比较主要反映任务条件差异，而不是语料之间的公平优劣比较。在当前固定划分和 lenient 过滤策略下，过滤后最佳融合模型的 macro-F1 从 0.3373 提升到 0.3722，提示低质量录音可能影响声调分类；但由于过滤也改变了调类和说话人分布，这一结果不能单独解释为模型能力提升。
+在 THCHS pilot 设置下，wav2vec2 冻结表征优于声学基线和简单融合，说明预训练语音表征可能捕捉到一部分与声调分类相关的信息；但整体准确率较低，反映出连续语音近似切片对声调分类的限制。自录孤立单字数据更接近本文系统的使用场景，在三类模型路径上均得到高于 THCHS 基线的结果；但二者切分方式、录音场景和标签来源不同，因此这种比较主要反映任务条件差异，而不是语料之间的公平优劣比较。在当前固定划分和 lenient 过滤策略下，过滤后最佳融合模型的 macro-F1 从 0.3373 提升到 0.3722，提示低质量录音可能影响声调分类；但由于过滤也改变了调类和说话人分布，这一结果不能单独解释为模型能力提升。
 
 同时，结果也显示模型性能并不高，不能把系统包装成可靠的自动判分器。尤其是在学习者反馈场景中，预测调类只能作为辅助提示。本文因此在原型中强调 F0 曲线、目标曲线比较和规则化声学反馈，而不是把分类准确率作为唯一目标。
 
@@ -252,7 +281,7 @@ speaker03 & 0.3761 & 0.3275 \\
 
 第三类是反馈侧扩展，包括规则消融和小规模人工评价。规则消融可以分别移除斜率、范围、三声低凹、四声下降等反馈规则，观察自动反馈和人工判断的一致性。人工评价可以让普通话母语者或学习者对若干录音的声调类别、曲线偏差和反馈可理解性进行评分，再与系统输出比较。需要强调的是，这些扩展实验在本文当前版本中作为可复现计划提出，尚未写入未运行的准确率或显著性检验结果。
 
-\section{系统原型与课程关联}
+\section{课程关联与系统意义}
 
 本文原型的学习者反馈并不直接复述模型分类结果，而是把预测与 F0 曲线结合。例如，对于目标二声，若学习者曲线从起点到终点的上升幅度不足，系统生成与“上升不充分”相关的提示；对于目标四声，若起点到终点下降不足，则生成与“下降不充分”相关的提示。反馈列表中的每一项都对应可解释声学属性，学习者可以在图上看到自己的曲线如何偏离目标曲线。
 
@@ -263,31 +292,26 @@ speaker03 & 0.3761 & 0.3275 \\
 本文设计并实现了一个面向普通话声调学习的可解释 AI 反馈系统。实验上，自建孤立单字数据比 THCHS 连续语音切片更贴近声调反馈任务；在当前过滤策略下，最佳融合模型的宏平均 F1 值高于未过滤设置；留一说话人结果揭示了说话人差异对声调分类的影响。系统上，Web 原型把 F0 提取、五度调值目标轮廓、参考预测和可解释反馈整合到一个可运行界面中。更重要的是，本文没有把“预测几声”作为唯一贡献，而是把预测结果限制为参考，把核心放在 F0 曲线可视化、目标轮廓比较和面向学习者的可操作反馈上。未来工作可扩展更多说话人与真实学习者数据，引入人工评分作为外部效标，并探索更稳健的预训练表征微调与融合方法。
 
 \balance
-\section*{参考文献（References）}
-\zihao{-6}
 \begin{thebibliography}{99}
 \bibitem{chao1930} CHAO Y R. A system of tone letters[J]. Le Maître Phonétique, 1930, 45: 24-27.
-\bibitem{gandour1983} GANDOUR J. Tone perception in Far Eastern languages[J]. Journal of Phonetics, 1983, 11(2): 149-175.
+\bibitem{zhu2010} 朱晓农. 语音学[M]. 北京: 商务印书馆, 2010.\newline ZHU X N. Phonetics[M]. Beijing: The Commercial Press, 2010. (in Chinese)
+\bibitem{huangliao2017} 黄伯荣, 廖序东. 现代汉语: 增订六版[M]. 北京: 高等教育出版社, 2017.\newline HUANG B R, LIAO X D. Modern Chinese: 6th revised ed[M]. Beijing: Higher Education Press, 2017. (in Chinese)
+\bibitem{liuxun2000} 刘珣. 对外汉语教育学引论[M]. 北京: 北京语言文化大学出版社, 2000.\newline LIU X. Introduction to Pedagogy of Teaching Chinese as a Foreign Language[M]. Beijing: Beijing Language and Culture University Press, 2000. (in Chinese)
 \bibitem{wang1999} WANG Y, SPENCE M M, JONGMAN A, et al. Training American listeners to perceive Mandarin tones[J]. Journal of the Acoustical Society of America, 1999, 106(6): 3649-3658.
+\bibitem{gandour1983} GANDOUR J. Tone perception in Far Eastern languages[J]. Journal of Phonetics, 1983, 11(2): 149-175.
+\bibitem{zhaojinming2004} 赵金铭. 对外汉语教学概论[M]. 北京: 商务印书馆, 2004.\newline ZHAO J M. An Introduction to Teaching Chinese as a Foreign Language[M]. Beijing: The Commercial Press, 2004. (in Chinese)
 \bibitem{witt2000} WITT S M, YOUNG S J. Phone-level pronunciation scoring and assessment for interactive language learning[J]. Speech Communication, 2000, 30(2/3): 95-108.
 \bibitem{neri2002} NERI A, CUCCHIARINI C, STRIK H, et al. The pedagogy-technology interface in computer assisted pronunciation training[J]. Computer Assisted Language Learning, 2002, 15(5): 441-467.
 \bibitem{eskenazi2009} ESKENAZI M. An overview of spoken language technology for education[J]. Speech Communication, 2009, 51(10): 832-844.
 \bibitem{baevski2020} BAEVSKI A, ZHOU Y, MOHAMED A, et al. wav2vec 2.0: A framework for self-supervised learning of speech representations[C]// Advances in Neural Information Processing Systems. 2020, 33: 12449-12460.
 \bibitem{hsu2021} HSU W N, BOLTE B, TSAI Y H H, et al. HuBERT: Self-supervised speech representation learning by masked prediction of hidden units[J]. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2021, 29: 3451-3460.
+\bibitem{linwang2013} 林焘, 王理嘉. 语音学教程[M]. 北京: 北京大学出版社, 2013.\newline LIN T, WANG L J. A Course in Phonetics[M]. Beijing: Peking University Press, 2013. (in Chinese)
+\bibitem{wu1992} 吴宗济, 林茂灿. 实验语音学概要[M]. 北京: 高等教育出版社, 1992.\newline WU Z J, LIN M C. An Outline of Experimental Phonetics[M]. Beijing: Higher Education Press, 1992. (in Chinese)
+\bibitem{shilin1986} 石林. 实验音系学概要[M]. 北京: 北京大学出版社, 1986.\newline SHI L. An Outline of Experimental Phonology[M]. Beijing: Peking University Press, 1986. (in Chinese)
 \bibitem{dong2015} DONG W, HUANG S, XU B. THCHS-30: A free Chinese speech corpus[R/OL]. OpenSLR SLR18, 2015.
 \bibitem{librosa} MCFEE B, RAFFEL C, LIANG D, et al. librosa: Audio and music signal analysis in Python[C]// Proceedings of the 14th Python in Science Conference. 2015: 18-25.
 \bibitem{sklearn} PEDREGOSA F, VAROQUAUX G, GRAMFORT A, et al. Scikit-learn: Machine learning in Python[J]. Journal of Machine Learning Research, 2011, 12: 2825-2830.
-\bibitem{repo} YE S H. Mandarin tone feedback project[EB/OL]. https://github.com/SunTomb/mandarin-tone-feedback.
+\bibitem{repo} 叶盛豪. 面向普通话声调学习的可解释 AI 反馈系统项目[EB/OL]. https://github.com/SunTomb/mandarin-tone-feedback.\newline YE S H. Explainable AI Feedback System for Mandarin Tone Learning[EB/OL]. https://github.com/SunTomb/mandarin-tone-feedback. (in Chinese)
 \end{thebibliography}
-
-\clearpage
-\onecolumn
-\englishtitle{An explainable AI feedback system for Mandarin tone learning}
-\authors{YE Shenghao}
-\affiliation{(University of Science and Technology of China, Hefei 230026, China)}
-\englishblock{\noindent\textbf{Abstract:} Mandarin tone learning involves both discrete tone-category recognition and continuous pitch-contour control. This paper presents an explainable AI feedback system for Mandarin tone learning. The system accepts isolated-character or short-word recordings, extracts and normalizes the fundamental frequency contour, compares the learner contour with a target five-level tone contour, and produces rule-based feedback linked to observable acoustic deviations. Offline experiments compare interpretable acoustic features, frozen wav2vec2 speech representations, and a simple fusion model. Besides retaining THCHS-derived continuous-speech slices as a public-data baseline, this work builds a self-recorded isolated-character dataset with 1080 samples and keeps 953 samples after quality filtering. On the filtered self-recorded data, the fusion model obtains the best result with an accuracy of 0.3965 and a macro-F1 score of 0.3722. Leave-one-speaker-out experiments further show clear speaker variation. The project is publicly available at https://github.com/SunTomb/mandarin-tone-feedback. The prediction is therefore presented only as a reference, while the main contribution of the prototype is F0 visualization, target-contour comparison, and interpretable learner feedback.}
-
-\vspace{1mm}
-\englishblock{\noindent\textbf{Key words:} Mandarin tone; fundamental frequency contour; five-level tone value; pretrained speech representation; explainable feedback}
 
 \end{document}

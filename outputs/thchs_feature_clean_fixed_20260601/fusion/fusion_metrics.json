@@ -1,0 +1,45 @@
+{
+  "accuracy": 0.2857142857142857,
+  "macro_f1": 0.2810989010989011,
+  "classification_report": {
+    "1": {
+      "precision": 0.25,
+      "recall": 0.21428571428571427,
+      "f1-score": 0.23076923076923078,
+      "support": 14.0
+    },
+    "2": {
+      "precision": 0.2857142857142857,
+      "recall": 0.42857142857142855,
+      "f1-score": 0.34285714285714286,
+      "support": 14.0
+    },
+    "3": {
+      "precision": 0.25,
+      "recall": 0.21428571428571427,
+      "f1-score": 0.23076923076923078,
+      "support": 14.0
+    },
+    "4": {
+      "precision": 0.36363636363636365,
+      "recall": 0.2857142857142857,
+      "f1-score": 0.32,
+      "support": 14.0
+    },
+    "accuracy": 0.2857142857142857,
+    "macro avg": {
+      "precision": 0.28733766233766234,
+      "recall": 0.2857142857142857,
+      "f1-score": 0.2810989010989011,
+      "support": 56.0
+    },
+    "weighted avg": {
+      "precision": 0.28733766233766234,
+      "recall": 0.2857142857142857,
+      "f1-score": 0.28109890109890107,
+      "support": 56.0
+    }
+  },
+  "acoustic_feature_count": 7,
+  "representation_feature_count": 768
+}

@@ -1,0 +1,71 @@
+{
+  "accuracy": 0.23214285714285715,
+  "macro_f1": 0.20376984126984127,
+  "classification_report": {
+    "1": {
+      "precision": 0.3,
+      "recall": 0.21428571428571427,
+      "f1-score": 0.25,
+      "support": 14.0
+    },
+    "2": {
+      "precision": 0.18181818181818182,
+      "recall": 0.2857142857142857,
+      "f1-score": 0.2222222222222222,
+      "support": 14.0
+    },
+    "3": {
+      "precision": 0.2857142857142857,
+      "recall": 0.42857142857142855,
+      "f1-score": 0.34285714285714286,
+      "support": 14.0
+    },
+    "4": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 14.0
+    },
+    "accuracy": 0.23214285714285715,
+    "macro avg": {
+      "precision": 0.19188311688311688,
+      "recall": 0.23214285714285715,
+      "f1-score": 0.20376984126984127,
+      "support": 56.0
+    },
+    "weighted avg": {
+      "precision": 0.1918831168831169,
+      "recall": 0.23214285714285715,
+      "f1-score": 0.20376984126984127,
+      "support": 56.0
+    }
+  },
+  "dataset_summary": {
+    "total": 384,
+    "by_split": {
+      "train": 272,
+      "val": 56,
+      "test": 56
+    },
+    "by_tone": {
+      "1": 96,
+      "3": 96,
+      "4": 96,
+      "2": 96
+    },
+    "by_speaker": {
+      "A11": 328,
+      "D11": 56
+    }
+  },
+  "feature_names": [
+    "f0_start",
+    "f0_mid",
+    "f0_end",
+    "f0_range",
+    "f0_slope",
+    "duration",
+    "voiced_ratio"
+  ],
+  "classifier": "random_forest"
+}
