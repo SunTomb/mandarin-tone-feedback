@@ -17,6 +17,11 @@ def _resolve_audio_path(metadata_path: Path, value: str) -> Path:
     path = Path(value)
     if path.is_absolute():
         return path
+    if path.parts[:2] == ("data", "self"):
+        for parent in [metadata_path.parent, *metadata_path.parents]:
+            candidate = parent / path
+            if candidate.exists():
+                return candidate
     return metadata_path.parent / path
 
 

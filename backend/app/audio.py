@@ -5,10 +5,18 @@ import numpy as np
 import soundfile as sf
 
 
+def trim_silence(data: np.ndarray, top_db: int = 25) -> np.ndarray:
+    if data.size == 0:
+        return data
+    trimmed, _ = librosa.effects.trim(data, top_db=top_db, frame_length=512, hop_length=128)
+    return trimmed if trimmed.size else data
+
+
 def load_audio_bytes(content: bytes, target_sr: int = 16000) -> tuple[np.ndarray, int, float]:
     data, sr = sf.read(BytesIO(content), dtype="float32")
     if data.ndim > 1:
         data = np.mean(data, axis=1)
+    data = trim_silence(data)
     if sr != target_sr:
         data = librosa.resample(data, orig_sr=sr, target_sr=target_sr)
         sr = target_sr

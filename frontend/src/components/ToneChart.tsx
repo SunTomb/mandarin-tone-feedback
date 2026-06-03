@@ -11,7 +11,7 @@ export function ToneChart({ result }: { result: ToneFeedbackResponse }) {
   return (
     <section className="tone-chart">
       <h2>F0 / 五度曲线</h2>
-      <ResponsiveContainer width="100%" height={280}>
+      <ResponsiveContainer width="100%" height={245}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="time" />

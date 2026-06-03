@@ -47,7 +47,7 @@ Primary users are Mandarin learners or students practicing isolated syllables an
 
 - A small web app that supports recording or uploading short audio.
 - A fixed practice list of Mandarin syllables or short words.
-- Tone prediction for four Mandarin lexical tones.
+- Reference tone estimation for four Mandarin lexical tones.
 - F0 extraction and speaker-normalized pitch visualization.
 - Comparison between learner contour and target contour.
 - Error-type feedback such as:
@@ -75,7 +75,7 @@ Primary users are Mandarin learners or students practicing isolated syllables an
 
 The user selects a target item, records or uploads audio, and receives a feedback card:
 
-1. predicted tone and confidence;
+1. target tone, reference prediction, and confidence;
 2. normalized F0 curve;
 3. target tone curve;
 4. approximate five-level tone value;

@@ -1,0 +1,44 @@
+{
+  "dataset": {
+    "raw_rows": 1080,
+    "filtered_rows": 953,
+    "filtered_policy": "min_duration=0.25, max_duration=3.2, min_voiced_ratio=0.12, min_voiced_frames=8, min_rms=0.005",
+    "filtered_split": {
+      "train": 401,
+      "val": 209,
+      "test": 343
+    }
+  },
+  "results": {
+    "raw_acoustic": {
+      "accuracy": 0.3638888888888889,
+      "macro_f1": 0.31977548414556284,
+      "output_metrics": "outputs/self_acoustic_baseline/acoustic_metrics.json"
+    },
+    "raw_representation_wav2vec2": {
+      "accuracy": 0.3388888888888889,
+      "macro_f1": 0.32108470918731863,
+      "output_metrics": "outputs/self_representation_wav2vec2/representation_metrics.json"
+    },
+    "raw_fusion_wav2vec2": {
+      "accuracy": 0.35555555555555557,
+      "macro_f1": 0.3372827114897158,
+      "output_metrics": "outputs/self_fusion_wav2vec2/fusion_metrics.json"
+    },
+    "filtered_acoustic": {
+      "accuracy": 0.3760932944606414,
+      "macro_f1": 0.32750166114717116,
+      "output_metrics": "outputs/self_filtered_lenient_acoustic/acoustic_metrics.json"
+    },
+    "filtered_representation_wav2vec2": {
+      "accuracy": 0.36443148688046645,
+      "macro_f1": 0.33535091261995464,
+      "output_metrics": "outputs/self_filtered_lenient_representation_wav2vec2/representation_metrics.json"
+    },
+    "filtered_fusion_wav2vec2": {
+      "accuracy": 0.3965014577259475,
+      "macro_f1": 0.37218897524315697,
+      "output_metrics": "outputs/self_filtered_lenient_fusion_wav2vec2/fusion_metrics.json"
+    }
+  }
+}

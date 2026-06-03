@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
 
-from app.main import app
+from app.main import FRONTEND_DIST, app
 
 
 def test_demo_feedback_endpoint_returns_feedback():
@@ -15,3 +15,8 @@ def test_demo_feedback_endpoint_returns_feedback():
     assert payload["feedback"]
     assert payload["user_contour"]
     assert payload["target_contour"]
+
+
+def test_frontend_dist_path_points_to_repository_frontend():
+    assert FRONTEND_DIST.name == "dist"
+    assert FRONTEND_DIST.parent.name == "frontend"

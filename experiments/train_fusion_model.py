@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
+from joblib import dump
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
@@ -51,6 +52,7 @@ def run_fusion_experiment(
     output_dir.mkdir(parents=True, exist_ok=True)
     save_metrics(metrics, output_dir / "fusion_metrics.json")
     save_confusion_matrix(labels[test_idx], predictions, output_dir / "fusion_confusion_matrix.csv")
+    dump(classifier, output_dir / "fusion_classifier.joblib")
     return metrics
 
 

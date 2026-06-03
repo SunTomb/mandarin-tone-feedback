@@ -1,6 +1,6 @@
 # Mandarin Tone Feedback
 
-A hybrid language-science project for Mandarin tone learning. The system records or uploads short Mandarin audio, predicts the lexical tone, visualizes the normalized F0 contour, compares it with a target contour, and returns interpretable feedback.
+A hybrid language-science project for Mandarin tone learning. The system records or uploads short Mandarin audio, estimates the lexical tone as a reference signal, visualizes the normalized F0 contour, compares it with a target contour, and returns interpretable feedback.
 
 ## Project goals
 

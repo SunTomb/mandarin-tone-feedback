@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
+from collections import Counter
 from pathlib import Path
 
 
@@ -79,3 +80,42 @@ def choose_duration_filtered_interval(
 
 def speaker_id_from_stem(stem: str) -> str:
     return stem.split("_", 1)[0]
+
+
+def is_clean_slice_row(
+    row: dict[str, str],
+    min_duration: float = 0.30,
+    max_duration: float = 0.90,
+) -> bool:
+    token = extract_pinyin_tone(row.get("pinyin", ""))
+    if token is None or str(token.tone) != str(row.get("tone", "")):
+        return False
+    text = row.get("text", "").strip()
+    if len(text) != 1:
+        return False
+    try:
+        duration = float(row.get("end_sec", "0")) - float(row.get("start_sec", "0"))
+    except ValueError:
+        return False
+    return min_duration <= duration <= max_duration
+
+
+def filter_metadata_rows(
+    rows: list[dict[str, str]],
+    quotas: dict[str, int],
+    min_duration: float = 0.30,
+    max_duration: float = 0.90,
+) -> list[dict[str, str]]:
+    counts: Counter[tuple[str, str]] = Counter()
+    filtered: list[dict[str, str]] = []
+    for row in rows:
+        if not is_clean_slice_row(row, min_duration=min_duration, max_duration=max_duration):
+            continue
+        split = row.get("split", "")
+        tone = row.get("tone", "")
+        quota = quotas.get(split)
+        if quota is not None and counts[(split, tone)] >= quota:
+            continue
+        filtered.append(row)
+        counts[(split, tone)] += 1
+    return filtered

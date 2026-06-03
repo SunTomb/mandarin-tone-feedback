@@ -24,6 +24,41 @@ def _points(values: list[float]) -> list[ContourPoint]:
     return [ContourPoint(time=index / (len(values) - 1), value=value) for index, value in enumerate(values)]
 
 
+def _edge_means(values: list[float]) -> tuple[float, float, float, float]:
+    window = max(1, min(3, len(values) // 4 or 1))
+    start = sum(values[:window]) / window
+    midpoint = values[len(values) // 2]
+    end = sum(values[-window:]) / window
+    pitch_range = max(values) - min(values)
+    return start, midpoint, end, pitch_range
+
+
+def predict_tone_from_contour(values: list[float]) -> tuple[int, float]:
+    if len(values) < 2:
+        return 1, 0.25
+
+    start, midpoint, end, pitch_range = _edge_means(values)
+    slope = end - start
+    dip_depth = min(start, end) - midpoint
+    body = values[:-2] if len(values) >= 5 else values
+    body_range = max(body) - min(body)
+
+    if dip_depth >= 0.5 and end >= midpoint + 0.5:
+        return 3, min(0.9, 0.45 + dip_depth / 3.0)
+    if slope <= -0.9 and body_range <= 0.8:
+        return 1, 0.55
+    if slope <= -0.9:
+        return 4, min(0.9, 0.45 + abs(slope) / 4.0)
+    if slope >= 0.8:
+        return 2, min(0.9, 0.45 + slope / 4.0)
+    if pitch_range <= 1.2:
+        return 1, min(0.85, 0.55 + (1.2 - pitch_range) / 4.0)
+
+    if abs(slope) < 0.6:
+        return 1, 0.45
+    return (2, 0.45) if slope > 0 else (4, 0.45)
+
+
 def demo_feedback(target_tone: int) -> ToneFeedbackResponse:
     user_values = DEMO_USER_CONTOURS[target_tone]
     target_values = TARGET_CONTOURS[target_tone]

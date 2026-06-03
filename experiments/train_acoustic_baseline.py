@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
+from joblib import dump
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import make_pipeline
@@ -78,6 +79,7 @@ def run_acoustic_baseline(
 
     save_metrics(metrics, output_dir / "acoustic_metrics.json")
     save_confusion_matrix(labels[test_idx], predictions, output_dir / "acoustic_confusion_matrix.csv")
+    dump(model, output_dir / "acoustic_classifier.joblib")
     return metrics
 
 

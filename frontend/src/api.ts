@@ -19,14 +19,21 @@ export async function analyzeAudio(targetTone: number, file: File): Promise<Tone
   body.append("target_tone", String(targetTone));
   body.append("file", file);
 
-  const response = await fetch("/api/analyze", {
-    method: "POST",
-    body
-  });
+  const controller = new AbortController();
+  const timeoutId = window.setTimeout(() => controller.abort(), 45000);
+  try {
+    const response = await fetch("/api/analyze", {
+      method: "POST",
+      body,
+      signal: controller.signal
+    });
 
-  if (!response.ok) {
-    throw new Error(`Request failed with status ${response.status}`);
+    if (!response.ok) {
+      throw new Error(`Request failed with status ${response.status}`);
+    }
+
+    return response.json();
+  } finally {
+    window.clearTimeout(timeoutId);
   }
-
-  return response.json();
 }

@@ -31,7 +31,27 @@ def test_load_validated_metadata_accepts_existing_audio(tmp_path: Path):
     assert rows[0]["audio_path"] == audio_train
 
 
-def test_load_validated_metadata_rejects_missing_audio(tmp_path: Path):
+def test_load_validated_metadata_resolves_project_root_relative_data_paths(tmp_path: Path):
+    audio_train = tmp_path / "data" / "self" / "1-1-1" / "speaker01_ma1_01.wav"
+    audio_test = tmp_path / "data" / "self" / "3-1-1" / "speaker03_ma1_01.wav"
+    audio_train.parent.mkdir(parents=True)
+    audio_test.parent.mkdir(parents=True)
+    audio_train.write_bytes(b"RIFF")
+    audio_test.write_bytes(b"RIFF")
+    metadata = tmp_path / "data" / "self" / "metadata.csv"
+    metadata.write_text(
+        "audio_path,text,pinyin,tone,speaker_id,repetition,split,batch_dir\n"
+        "data/self/1-1-1/speaker01_ma1_01.wav,妈,ma1,1,speaker01,1,train,1-1-1\n"
+        "data/self/3-1-1/speaker03_ma1_01.wav,妈,ma1,1,speaker03,1,test,3-1-1\n",
+        encoding="utf-8",
+    )
+
+    rows = load_validated_metadata(metadata)
+
+    assert rows[0]["audio_path"] == audio_train
+    assert rows[1]["audio_path"] == audio_test
+
+
     metadata = tmp_path / "metadata.csv"
     write_csv(metadata, "missing.wav,妈,ma1,1,speaker01,train\n")
 

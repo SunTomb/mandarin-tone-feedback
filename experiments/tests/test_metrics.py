@@ -23,10 +23,24 @@ def test_concatenate_features_rejects_mismatched_rows():
 
 
 def test_run_fusion_experiment_writes_metrics(tmp_path: Path):
-    acoustic = np.array([[1.0, 2.0], [1.5, 2.5], [4.0, 3.0], [4.5, 3.5]])
-    representation = np.array([[0.1, 0.2], [0.2, 0.1], [0.9, 0.8], [0.8, 0.9]])
-    labels = np.array([1, 1, 4, 4])
-    splits = np.array(["train", "train", "test", "test"])
+    acoustic = np.array([
+        [1.0, 2.0],
+        [1.5, 2.5],
+        [4.0, 3.0],
+        [4.5, 3.5],
+        [1.1, 2.1],
+        [4.2, 3.2],
+    ])
+    representation = np.array([
+        [0.1, 0.2],
+        [0.2, 0.1],
+        [0.9, 0.8],
+        [0.8, 0.9],
+        [0.15, 0.25],
+        [0.85, 0.75],
+    ])
+    labels = np.array([1, 1, 4, 4, 1, 4])
+    splits = np.array(["train", "train", "train", "train", "test", "test"])
 
     acoustic_path = tmp_path / "acoustic.npy"
     representation_path = tmp_path / "representation.npy"
@@ -43,3 +57,4 @@ def test_run_fusion_experiment_writes_metrics(tmp_path: Path):
     assert "accuracy" in metrics
     assert (output_dir / "fusion_metrics.json").exists()
     assert (output_dir / "fusion_confusion_matrix.csv").exists()
+    assert (output_dir / "fusion_classifier.joblib").exists()

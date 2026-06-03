@@ -7,6 +7,7 @@ from typing import Any
 
 import numpy as np
 import torch
+from joblib import dump
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
@@ -91,6 +92,7 @@ def run_representation_experiment(
 
     save_metrics(metrics, output_dir / "representation_metrics.json")
     save_confusion_matrix(labels[test_idx], predictions, output_dir / "representation_confusion_matrix.csv")
+    dump(classifier, output_dir / "representation_classifier.joblib")
     return metrics
 
 
